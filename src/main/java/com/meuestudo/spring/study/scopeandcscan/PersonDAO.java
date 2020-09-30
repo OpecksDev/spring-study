@@ -1,4 +1,4 @@
-package com.meuestudo.spring.basico.scope;
+package com.meuestudo.spring.study.scopeandcscan;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

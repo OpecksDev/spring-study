@@ -1,4 +1,4 @@
-package com.meuestudo.spring.basico.springstudy.basic;
+package com.meuestudo.spring.study.springstudy.basic;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

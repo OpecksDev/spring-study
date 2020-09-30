@@ -1,4 +1,4 @@
-package com.meuestudo.spring.basico.springstudy.basic;
+package com.meuestudo.spring.study.springstudy.basic;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

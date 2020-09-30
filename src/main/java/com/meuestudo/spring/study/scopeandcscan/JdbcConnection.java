@@ -1,4 +1,4 @@
-package com.meuestudo.spring.basico.scope;
+package com.meuestudo.spring.study.scopeandcscan;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;

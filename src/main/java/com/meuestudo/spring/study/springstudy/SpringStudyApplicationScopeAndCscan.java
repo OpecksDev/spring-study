@@ -1,6 +1,6 @@
-package com.meuestudo.spring.basico.springstudy;
+package com.meuestudo.spring.study.springstudy;
 
-import com.meuestudo.spring.basico.scope.PersonDAO;
+import com.meuestudo.spring.study.scopeandcscan.PersonDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //import org.springframework.boot.SpringApplication;
@@ -12,15 +12,15 @@ import org.springframework.context.annotation.Configuration;
 
 //@SpringBootApplication
 @Configuration
-@ComponentScan("com.meuestudo.spring.basico.scope")
-public class SpringStudyApplicationScope {
+@ComponentScan("com.meuestudo.spring.study.scopeandcscan")
+public class SpringStudyApplicationScopeAndCscan {
 
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SpringStudyApplicationScope.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SpringStudyApplicationScopeAndCscan.class);
 
     public static void main(String[] args) {
         //application context
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringStudyApplicationScope.class);//SpringApplication.run(SpringStudyApplicationScope.class, args);
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringStudyApplicationScopeAndCscan.class);//SpringApplication.run(SpringStudyApplicationScope.class, args);
         PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);
         PersonDAO personDAO2 = applicationContext.getBean(PersonDAO.class);
 

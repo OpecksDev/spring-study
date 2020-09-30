@@ -1,6 +1,6 @@
-package com.meuestudo.spring.basico.springstudy;
+package com.meuestudo.spring.study.springstudy;
 
-import com.meuestudo.spring.basico.springstudy.basic.BinarySearchImpl;
+import com.meuestudo.spring.study.springstudy.basic.BinarySearchImpl;
 //import org.springframework.boot.SpringApplication;
 //import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -18,7 +18,7 @@ public class SpringStudyApplicationBasic {
 		//int result = binarySearch.binarySearch(new int[] {1,2,4,5,6}, 6);
 		//System.out.println(result);
 		//application context
-		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringStudyApplicationBasic.class); //SpringApplication.run(SpringStudyApplicationBasic.class, args);
+		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringStudyApplicationBasic.class); //SpringApplication.run(SpringStudyApplicationBasic.class, args);
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 		int result = binarySearch.binarySearch(new int[] {1,2,4,5,6}, 6);
 		System.out.println(result);
