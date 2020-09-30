@@ -15,7 +15,11 @@ public class SpringStudyApplicationXML {
         try(ClassPathXmlApplicationContext applicationContext  = new ClassPathXmlApplicationContext("applicationContext.xml")){
 
             XmlPersonDAO personDAO = applicationContext.getBean(XmlPersonDAO.class);
+
+            XmlPersonDAO personDAO2 = applicationContext.getBean(XmlPersonDAO.class);
             LOGGER.info("{} {}", personDAO, personDAO.getJdbcConnection());
+
+            LOGGER.info("{} {}", personDAO2, personDAO2.getJdbcConnection());
 
             LOGGER.info("-> {}", (Object) applicationContext.getBeanDefinitionNames());
 
